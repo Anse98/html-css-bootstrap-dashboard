@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Dashboard</title>
   <link rel="stylesheet" href="./style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/f1f0c66429.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="d-flex flex-column">
+  <!----------------------------HEADER---------------------------->
 
   <header class="d-flex align-items-center py-3 gap-3">
     <!-- logo -->
@@ -22,7 +26,7 @@
     </div>
     <!-- searchbar -->
     <div class="header-searchbar flex-grow-1">
-      <input type="search" class="w-100 py-2" placeholder="Prova a cercare: Lezioni di Laravel"> 
+      <input type="search" class="w-100 py-2" placeholder="Prova a cercare: Lezioni di Laravel">
     </div>
     <!-- icone header -->
     <div class="header-options">
@@ -34,29 +38,31 @@
       </ul>
     </div>
   </header>
+<!-------------------------------MAIN-------------------------------->
 
   <main class="flex-grow-1 d-flex">
     <!-- navbar -->
-      <nav class="sidebar d-flex flex-column justify-content-between align-items-center pt-4 flex-shrink-0">
-        <ul class="mb-0 ps-0 sidebar-icons d-flex flex-column gap-3">
-          <li>
-            <a href=""><i class="fa-solid fa-house"></i></a><a href=""><span class="sidebar-text ps-1">Home</span></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-solid fa-chart-simple"></i></a><a href=""><span class="sidebar-text ps-2">Stats</span></a>
-          </li>
-          <li>
-            <a href=""><i class="fa-solid fa-signal"></i></a><a href=""><span class="sidebar-text">Signals</span></a>
-          </li>
-        </ul>
-        <div class="sidebar-settings d-flex align-items-center gap-2 pb-4">
-          <a href=""><i class="fa-solid fa-gear"></i></a><a href=""><span class="sidebar-text">Admin</span></a>
-        </div>
-      </nav>
+    <nav class="sidebar d-flex flex-column justify-content-between align-items-center pt-4 flex-shrink-0">
+      <ul class="mb-0 ps-0 sidebar-icons d-flex flex-column gap-3">
+        <li>
+          <a href=""><i class="fa-solid fa-house"></i></a><a href=""><span class="sidebar-text ps-1">Home</span></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-solid fa-chart-simple"></i></a><a href=""><span
+              class="sidebar-text ps-2">Stats</span></a>
+        </li>
+        <li>
+          <a href=""><i class="fa-solid fa-signal"></i></a><a href=""><span class="sidebar-text">Signals</span></a>
+        </li>
+      </ul>
+      <div class="sidebar-settings d-flex align-items-center gap-2 pb-4">
+        <a href=""><i class="fa-solid fa-gear"></i></a><a href=""><span class="sidebar-text">Admin</span></a>
+      </div>
+    </nav>
 
-      <!-- contenuto principale -->
+    <!-- contenuto principale -->
 
-      <!-- parte alta contenuto principale -->
+    <!-- parte alta contenuto principale -->
     <div class="main-content flex-grow-1">
       <div class="main-top py-4">
         <div class="container-fluid">
@@ -79,9 +85,9 @@
                   <span class="badge">3 app</span>
                   <i class="fa-solid fa-angles-right"></i>
                   <span class="badge d-lg-none">+</span>
-                  <span class="badge d-sm-none d-lg-inline-block">Boolean mobile app</span>
-                  <span class="badge d-sm-none d-lg-inline-block">Boolean web app</span>
-                  <span class="badge d-sm-none d-lg-inline-block">Boolean blog app</span>
+                  <span class="badge d-none d-lg-inline-block">Boolean mobile app</span>
+                  <span class="badge d-none d-lg-inline-block">Boolean web app</span>
+                  <span class="badge d-none d-lg-inline-block">Boolean blog app</span>
                 </div>
               </div>
             </div>
@@ -91,17 +97,78 @@
                 <p class="fw-semibold mb-1">Studenti online negli ultimi 30 minuti</p>
                 <p class="fw-semibold fs-2 mb-0">125</p>
               </div>
-            </div>  
+            </div>
           </div>
         </div>
       </div>
       <!-- parte bassa contenuto principale -->
       <div class="main-body">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- parte sinistra main content -->
+            <div class="col-lg-8">
 
+              <!-- le prossime classi -->
+              <div class="wrapper border mt-4 pb-3">
+                <div class="title-component">
+                  <h2>Prossime classi</h2>
+                </div>
+
+                <div class="next-classrooms px-3">
+                  <table class="table">
+                    <!-- table head -->
+                    <thead>
+                      <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Data di inizio</th>
+                        <th scope="col">RDI</th>
+                        <th scope="col">Stato</th>
+                        <th scope="col">Azioni</th>
+                      </tr>
+                    </thead>
+                    <!-- table body -->
+                    <tbody>
+                      <tr>
+                        <th scope="row">Classe 75</th>
+                        <td>15 Febbraio 2023</td>
+                        <td>20%</td>
+                        <td><span class="badge text-bg-success">Done</span></td>
+                        <td>c</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Classe 76</th>
+                        <td>16 Febbraio 2023</td>
+                        <td>20%</td>
+                        <td><span class="badge text-bg-success">Done</span></td>
+                        <td>c</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Classe 77</th>
+                        <td >17 Febbraio 2023</td>
+                        <td>20%</td>
+                        <td><span class="badge text-bg-warning">Progress</span></td>
+                        <td>c</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- fine le prossime classi -->
+            </div>
+
+            <!-- parte destra main content -->
+            <div class="col-lg-4">
+              c
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

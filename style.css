@@ -21,10 +21,12 @@ a {
   color: currentColor;
 }
 
-/* DEBUG */
-header {
-  border-bottom: solid 1px black;
-}
+.title-component {
+  border-bottom: solid 1px lightgray;
+  padding-left: 10px;
+  background-color: #F7F7F7;
+} 
+
 /******************************HEADER******************************************/
 
 header figure {
@@ -110,6 +112,11 @@ header ul li:last-child {
 .main-top .boolean-badges i {
   font-size: 12px;
 }
+
+/* contenuto principale */
+
+
+
 
 /************************MEDIA QUERY******************************************/
 
