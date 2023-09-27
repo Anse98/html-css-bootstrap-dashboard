@@ -31,6 +31,13 @@ header figure {
   width: 60px;
 }
 
+.header-searchbar input {
+  background-color: #E5E5E5;
+  border: none;
+  border-radius: 6px;
+  padding-left: 6px;
+} 
+
 header ul li:not(:last-child) {
   display: none;
   color: #5B5858;
@@ -38,6 +45,34 @@ header ul li:not(:last-child) {
 
 header ul li:last-child {
   color: #FF8F00;
+}
+
+/******************************MAIN****************************************/
+
+/**********sidebar************/
+
+.sidebar {
+  width:70px;
+  border-right: solid 1px black;
+  height: 100%;
+  background-image: url(./img/sidebar-bg.png);
+  background-color: #051E34;
+  color: white;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sidebar ul li i,
+.sidebar .sidebar-settings i{
+  font-size: 18px;
+}
+
+.sidebar .sidebar-text {
+  display: none;
 }
 
 /************************MEDIA QUERY******************************************/
@@ -54,9 +89,20 @@ header ul li:last-child {
 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+
+  /* header */
   header ul li:not(:last-child) {
     display: block;
   }
+  /* sidebar */
+  .sidebar {
+    width: 150px;
+  }
+
+  .sidebar .sidebar-text {
+    display: flex;
+  }
+
  }
 
  /* X-Large devices (large desktops, 1200px and up) */
