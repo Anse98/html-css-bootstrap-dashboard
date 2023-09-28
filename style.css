@@ -48,6 +48,16 @@ a {
   padding: 10px 6px;
 } 
 
+/* focus */
+
+.accordion-header .accordion-button:focus {
+  box-shadow: none;
+}
+
+.list-group-item .form-check-input:focus {
+  box-shadow: none;
+  border-color: lightgray;
+}
 /******************************HEADER******************************************/
 
 header {
@@ -163,6 +173,13 @@ main {
 
 .new-student-form .input-group.email {
   flex-basis: 50%;
+}
+
+.main-top .new-student .offcanvas.offcanvas-start {
+  right: 0;
+  left: initial;
+  transform: none;
+  transition: none;
 }
 
 /* badge */
