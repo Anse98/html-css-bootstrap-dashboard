@@ -63,6 +63,26 @@ header figure {
   width: 60px;
 }
 
+.header-searchbar {
+  position: relative;
+}
+
+::placeholder {
+  padding-left: 22px;
+}
+
+.header-searchbar .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translate(0, -50%);
+  font-size: 16px;
+}
+
+header .btn {
+  border: none;
+} 
+
 .header-searchbar input {
   background-color: #E5E5E5;
   border: none;
@@ -71,17 +91,13 @@ header figure {
 } 
 
 header ul li a {
-  color: currentColor;
+  color:#5B5858;
 }
 
-header ul li:not(:last-child) {
-  display: none;
-  color: #5B5858;
-}
-
-header ul li:last-child {
+header ul li button i {
   color: #FF8F00;
 }
+
 
 /******************************MAIN****************************************/
 main {
@@ -106,6 +122,7 @@ main {
   display: flex;
   align-items: center;
   gap: 6px;
+  padding: 6px;
 }
 
 .sidebar ul li a,
@@ -139,7 +156,16 @@ main {
   padding: 0 10px;
   font-size: 14px;
 }
+/* offcanvas */
+.main-top .new-student .offcanvas {
+  width: 100%;
+}
 
+.new-student-form .input-group.email {
+  flex-basis: 50%;
+}
+
+/* badge */
 .main-top .badge {
   background-color: #165BBA;
   font-weight: 500;
@@ -151,6 +177,7 @@ main {
 
 /* contenuto principale */
 
+/* table */
 .table {
   white-space: nowrap;
 }
@@ -167,16 +194,35 @@ main {
 }
 
 .table th > .class-img figure {
-  width: 20px;
+  width: 26px;
   margin-bottom: 0;
   display: flex;
 }
 
 .table td i {
   color: #6C757D;
+  cursor: pointer;
+}
+/* fine table */
+
+/****************************HOVER********************************************/
+.sidebar ul li:hover {
+  background-color: rgba(211, 211, 211, 0.664);
 }
 
+.sidebar .sidebar-settings:hover {
+  background-color: rgba(211, 211, 211, 0.664);
+}
 
+.accordion-item .accordion-header:hover{
+  color: #165BBA;
+}
+
+.main-top .new-student .btn:hover {
+  background-color: white;
+  color: black;
+  border-color: #1B72E8;
+}
 /************************MEDIA QUERY******************************************/
 /* xs devices */
 @media (min-width:0px) {
@@ -213,9 +259,7 @@ main {
 @media (min-width: 992px) { 
 
   /* header */
-  header ul li:not(:last-child) {
-    display: block;
-  }
+
 
   header figure {
     width: 150px;
@@ -230,6 +274,11 @@ main {
     display: flex;
   }
 
+  /* offcanvas */
+
+  .main-top .new-student .offcanvas {
+    width: 50%;
+  }
  }
 
  /* X-Large devices (large desktops, 1200px and up) */
