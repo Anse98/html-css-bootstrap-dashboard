@@ -23,6 +23,9 @@ a {
 
 .wrapper {
   border-radius: 6px;
+  border:solid 1px lightgray;
+  margin-top: 22px;
+  padding-bottom: 20px;
 }
 
 .title-component {
