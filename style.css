@@ -21,6 +21,19 @@ a {
   color: currentColor;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 .wrapper {
   border-radius: 6px;
   border:solid 1px lightgray;
@@ -36,6 +49,15 @@ a {
 } 
 
 /******************************HEADER******************************************/
+
+header {
+  background-color: white;
+  position: sticky;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
 
 header figure {
   width: 60px;
@@ -62,7 +84,13 @@ header ul li:last-child {
 }
 
 /******************************MAIN****************************************/
+main {
+  overflow: hidden;
+}
 
+.main-content {
+  overflow-y: scroll;
+}
 /**********sidebar************/
 
 .sidebar {
@@ -150,7 +178,7 @@ header ul li:last-child {
 
 
 /************************MEDIA QUERY******************************************/
-
+/* xs devices */
 @media (min-width:0px) {
   /* table */
   tbody tr td:nth-of-type(1) {
