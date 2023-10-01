@@ -49,11 +49,6 @@ a {
 } 
 
 /* focus */
-
-.accordion-header .accordion-button:focus {
-  box-shadow: none;
-}
-
 .list-group-item .form-check-input:focus {
   box-shadow: none;
   border-color: lightgray;
@@ -75,10 +70,6 @@ header figure {
 
 .header-searchbar {
   position: relative;
-}
-
-::placeholder {
-  padding-left: 22px;
 }
 
 .header-searchbar .search-icon {
@@ -199,6 +190,10 @@ main {
   white-space: nowrap;
 }
 
+.next-classrooms .table>:not(caption)>*>* {
+  background-color: transparent;
+}
+
 .table th:first-child {
   width: 70%;
 }
@@ -239,6 +234,14 @@ main {
   background-color: white;
   color: black;
   border-color: #1B72E8;
+}
+
+table tr:hover {
+  background-color: lightgray;
+}
+
+table thead tr:hover {
+  background-color: transparent;
 }
 /************************MEDIA QUERY******************************************/
 /* xs devices */
